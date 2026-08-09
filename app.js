@@ -9,8 +9,8 @@ document.getElementById('logoutBtn').addEventListener('click', () => {
 });
 
 // === Pengaturan Repo GitHub ===
-const GITHUB_USER = 'USERNAME_GITHUB'; // GANTI!
-const GITHUB_REPO = 'NAMA_REPO';       // GANTI!
+const GITHUB_USER = 'ariprismaa'; // GANTI!
+const GITHUB_REPO = 'catatan-ku-my-favorite';       // GANTI!
 const USER_FILE = `catatan_${user.id}.json`; // File khusus per pengguna
 
 // === Ambil catatan dari repo GitHub ===
