@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masuk - Catatan Ku</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="login-body">
+  <div class="login-card">
+    <h2>🔑 Masuk Akun Catatan Ku</h2>
+    <p>Daftar akun baru atau masuk, catatanmu tersimpan aman & tidak hilang</p>
+    <div id="netlify-identity-login"></div>
+  </div>
+  <script>
+    netlifyIdentity.on('login', () => {
+      window.location.href = 'index.html';
+    });
+    window.onload = () => netlifyIdentity.open();
+  </script>
+</body>
+</html>
