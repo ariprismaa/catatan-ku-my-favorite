@@ -64,4 +64,6 @@ app.delete('/api/catatan/:id',auth,async(req,res)=>{
   res.json({pesan:"Terhapus"});
 });
 
-app.listen(PORT,()=>console.log(`🚀 API berjalan port ${PORT}`));
+//app.listen(PORT,()=>console.log(`🚀 API berjalan port ${PORT}`));
+// hapus app.listen, tambah baris ini agar bisa jalan serverless
+module.exports = app;
